@@ -1,0 +1,93 @@
+﻿@model IEnumerable<PROYECTO_TP_PNT1.Models.Reserva>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="tabla">
+    <h1>GESTIÓN DE RESERVAS</h1>
+
+    <p>
+        <a asp-action="Create" class="nuevo-reserva">Nueva reserva</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.idReserva)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.idAlojamiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.idCliente)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.entrada)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.salida)
+                </th>
+
+
+
+                <th>
+                    @Html.DisplayNameFor(model => model.cantPersonas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CantHabitaciones)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.desayuno)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.confirmado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.precioTotal)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idReserva)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idAlojamiento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.idCliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.entrada)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.salida)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.cantPersonas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CantHabitaciones)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.desayuno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.confirmado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.precioTotal)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.idReserva" class="editar-reserva">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.idReserva">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.idReserva" class="eliminar-reserva">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

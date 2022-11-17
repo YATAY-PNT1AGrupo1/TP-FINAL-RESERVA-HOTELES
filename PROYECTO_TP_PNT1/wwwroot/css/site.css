@@ -1,0 +1,155 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+.nav-item {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.nav-item:hover{
+    font-size:18px;
+  
+}
+/* botones crud */
+a {
+    color: #000000;
+}
+
+.createnew-cliente:hover, .nuevo-alojamiento:hover, .nuevo-reserva:hover {
+    color: green;
+}
+
+.delete-cliente:hover, .eliminar-alojamiento:hover, .eliminar-reserva:hover {
+    color: red;
+}
+
+.editar-cliente:hover, .editar-alojamiento:hover, .editar-reserva:hover {
+    color: blue;
+}
+
+/*titulo del home*/
+.display-4 {
+    font-size: 35px;
+}
+
+
+
+/*-------*/
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #FFFFFF;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+#titulo-nav {
+    color: #FFFFFF;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    max-height: 100%;
+    background-color: #808080;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    height:100%;
+
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* Margin bottom by footer height */
+
+ 
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding:0;
+    background-color: #808080;
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+main{
+    height:100vh;
+
+}
+
+.tabla{
+    margin:20px;
+}
+.img {
+    background-image: url("https://www.wko.at/branchen/w/gewerbe-handwerk/gewerbliche-dienstleister/personaldienstleister/Sonstige-gewerbliche-DL-750x422--Jose-Luis-Pelaez,-Inc.Blend.jpg");
+    background-repeat:no-repeat;
+    background-color: #808080;
+    background-size:cover;
+    background-position-y:initial;
+
+   
+  
+    height: 500px;
+
+}
+
+
+
+#titulo-nav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 15px;
+    background-color: #84b6f4;
+    border: solid, black;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    margin-left: 20px;
+    
+}
+.info:hover {
+    background: white;
+}
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PROYECTO_TP_PNT1.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="tabla">
+    <h1>GESTIÓN DE CLIENTES</h1>
+
+    <p>
+        <a asp-action="Create" class="createnew-cliente">Nuevo cliente</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.apellido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.dni)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.edad)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.apellido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dni)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.edad)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.idCliente" class="editar-cliente">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.idCliente">Detalle</a> |
+                        <a asp-action="Delete" asp-route-id="@item.idCliente" class="delete-cliente">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
